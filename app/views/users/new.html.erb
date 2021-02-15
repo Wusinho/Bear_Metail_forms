@@ -16,3 +16,32 @@
     <input type="submit" value="Submit"> 
 
   </form>
+
+<!-- <%=form_tag users_path do %> 
+ <%= label_tag(:username, "User Name") %>
+ <%= text_field_tag(:username)%>
+ <%= label_tag(:email, "Email")%>
+ <%= text_field_tag(:email)%>
+ <%= label_tag(:password, "Password")%>
+ <%= password_field_tag(:password)%>
+ <%= submit_tag("Sign Up") %>
+<%end%> -->
+
+
+<ul>
+
+<%= form_for @user do |f|%>
+<li> <%= f.label :username, "First Name"%> </li>
+<li> <%= f.text_field :username , placeholder: "Type your name here"%> </li>
+<li> <%= f.label :email, "Email"%> </li>
+<li> <%= f.text_field :email , placeholder: "example@example.com"%> </li>
+<li> <%= f.label :password, "Password"%> </li>
+<li> <%= f.password_field :password , placeholder: "Minimum 6 letters or numbers" %> </li>
+<li> <%= f.submit "Sign up"%> </li>
+<%end%>
+</ul>
+  <ul>
+      <% @user.errors.full_messages.each do |error| %>
+      <li class="error-msgs"><%= error %></li>
+      <% end %>
+    </ul>
