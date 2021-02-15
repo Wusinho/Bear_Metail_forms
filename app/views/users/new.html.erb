@@ -3,7 +3,23 @@
 New User
 </h1>
 
+ <form accept-charset="UTF-8" action="<%= users_path %>" method="post">
+   <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" >
+  
+   <label for="username">Username:</label>
+   <input id="username"  name="user[username]" type="text" required ><br>
+ 
+   <label for="email">e-mail:</label>
+   <input id="email" name="user[email]" type="text" required><br>
+ 
+   <label for="password">Password:</label>
+   <input id="password" name="user[password]" type="password" required><br>
+ 
+   <input type="submit" value="Submit">
+ 
+ </form>
 
+<!--
 <%= form_with model: @user do |form| %>
  
 <div>
@@ -37,7 +53,7 @@ New User
 
 <% end %>
 
-<!--<%=form_tag users_path do %>
+<%=form_tag users_path do %>
 
 <%= label_tag(:username, "User Name") %>
 <%= text_field_tag(:username)%>
@@ -50,18 +66,3 @@ New User
 
 
 
- <form accept-charset="UTF-8" action="new" method="get">
-   <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" >
-  
-   <label for="username">Username:</label>
-   <input id="username"  name="user[username]" type="text" required ><br>
- 
-   <label for="email">e-mail:</label>
-   <input id="email" name="user[email]" type="text" required><br>
- 
-   <label for="password">Password:</label>
-   <input id="password" name="user[password]" type="password" required><br>
- 
-   <input type="submit" value="Submit">
- 
- </form>
