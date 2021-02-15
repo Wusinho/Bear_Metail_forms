@@ -9,16 +9,25 @@ New User
 <div>
 <%= form.label :username %><br>
 <%= form.text_field :username, :placeholder => "your username" %>
+<% @user.errors.full_messages_for(:username).each do |message| %>
+<%= message %>
+<% end %>
 </div>
  
 <div>
 <%= form.label :email %><br>
 <%= form.email_field :email, :placeholder => "email@gmail.com" %>
+<% @user.errors.full_messages_for(:email).each do |message| %>
+<%= message %>
+<% end %>
 </div>
  
 <div>
 <%= form.label :password %><br>
 <%= form.password_field :password %>
+<% @user.errors.full_messages_for(:password).each do |message| %>
+<%= message %>
+<% end %>
 </div>
  
 <div>
