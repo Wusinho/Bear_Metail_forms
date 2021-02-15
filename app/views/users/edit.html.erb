@@ -1,0 +1,28 @@
+<!--
+<h1>
+Edit User Info
+</h1>
+
+<%= form_with model: @user do |form| %>
+ 
+<div>
+<%= form.label :username %><br>
+<%= form.text_field :username, :placeholder => "your username" %>
+</div>
+ 
+<div>
+<%= form.label :email %><br>
+<%= form.email_field :email, :placeholder => "email@gmail.com" %>
+</div>
+ 
+<div>
+<%= form.label :password %><br>
+<%= form.password_field :password %>
+</div>
+ 
+<div>
+<br>
+<%= form.submit %>
+</div>
+
+<% end %>
