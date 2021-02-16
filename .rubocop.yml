@@ -1,3 +1,6 @@
+Layout/LineLength:
+  Max: 120
+
 Style/Documentation:
   Enabled: false
 Lint/Syntax:
@@ -13,8 +16,8 @@ AllCops:
     - "Rakefile"
   DisplayCopNames: true
 
-Layout/LineLength:
-  Max: 120
+
+
 Metrics/MethodLength:
   Max: 30
 Metrics/AbcSize:
