@@ -17,8 +17,8 @@ Metrics/CyclomaticComplexity:
 Metrics/ClassLength:
   Max: 150
 Metrics/BlockLength:
-  ExcludedMethods: ['describe']
-  Max: 30
+  IgnoredMethods: ['describe']
+  Max: 50
 
 
 Style/Documentation:
@@ -62,4 +62,8 @@ Style/GuardClause:
 Style/UnlessElse:
   Enabled: false
 Style/BlockComments:
+  Enabled: false
+Style/GlobalVars:
+  Enabled: false
+Lint/Syntax:
   Enabled: false
