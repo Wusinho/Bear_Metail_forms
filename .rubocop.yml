@@ -9,6 +9,8 @@ Style/FrozenStringLiteralComment:
   EnforcedStyle: never
 Style/GlobalVars:
   Enabled: false
+Syntax:
+  Enabled: false
 
 AllCops:
   Exclude:
