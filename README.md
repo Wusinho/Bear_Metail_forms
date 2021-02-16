@@ -26,6 +26,11 @@ After cloning open the file and write in terminal:
  rails console
 ```
 
+After this write following command to see the All User
+
+```bash
+ User.all
+```
 ### Authors
 
 👤 <b>Heber Lazo</b>
