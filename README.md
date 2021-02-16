@@ -1,24 +1,58 @@
-# README
+# Micro-Reddit
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+In this project, we created a simple back end of a user and Form for Signup and Form Authentication.
 
-Things you may want to cover:
+![screenshot](./app/assets/images/screen.png)
 
-* Ruby version
+We created a Form with Authetication and model for User with Authentication
 
-* System dependencies
+## Built With
 
-* Configuration
+- Ruby v 2.7.1
+- Rails app gem
+- Form Authentication
 
-* Database creation
+### Setup
 
-* Database initialization
+To run this project locally, please ensure you have Ruby installed on your machine, then clone this repository by running.
 
-* How to run the test suite
+```bash
+git clone https://github.com/Wusinho/Bear_Metail_forms.git
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+After cloning open the file and write in terminal:
 
-* Deployment instructions
+```bash
+ rails console
+```
 
-* ...
+After this write following command to see the All User
+
+```bash
+ User.all
+```
+### Authors
+
+👤 <b>Heber Lazo</b>
+
+- Github: [@Wusinho](https://github.com/Wusinho)
+- LinkedIn: [Heber Lazo](https://www.linkedin.com/in/heber-lazo-benza-523266133/)
+
+👤 **Abdul Khaliq**
+
+- Github: [@abdulkhaliqdev](https://github.com/abdulkhaliqdev)
+- Twitter: [@abdulkhaliqdev](https://twitter.com/Abdulkhaliqdev)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/abdul-khaliq-89452b1a9/)
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Microverse
+- The Odin Project
+
+## 📝 License
+
+This project is [MIT](LICENSE.md) licensed.
